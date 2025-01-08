@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.typewriter {
+    font-size: 2rem;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: 
+    hidden;
+  }
+
+  .typewriter-head{
+    color: #D9EAFD;
+    font-family: "Lato" , serif;
+    font-weight: bolder;
+  }
+  
+  .cursor {
+    border-right: 3px solid black;
+    display: inline-block;
+    animation: blink 0.5s step-end infinite;
+    color: #fff;
+  }
+  
+  @keyframes blink {
+    50% {
+      border-right-color: transparent;
+    }
+  }
+  

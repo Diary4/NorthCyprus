@@ -1,0 +1,60 @@
+.applynow {
+  font-family: lato;
+  background-color: #f8fafc;
+  height: 100%;
+}
+.applynow-main {
+  padding: 90px 20px;
+  height: 93vh;
+}
+
+input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  color: #6c757d;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #0063cd;
+}
+
+/* Fade animation for entering and exiting components */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+
+@media  (max-width: 768px) {
+  
+  .applynow-main {
+    padding: 50px 20px;
+    height: 100%;
+  }
+  
+}
