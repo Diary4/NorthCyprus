@@ -6,7 +6,7 @@
 
 .top-section {
   background-image: url("../university.jpg");
-  background-size: cover; /* Ensures the image covers the entire background */
+  background-size: cover; 
   background-position: center;
   position: relative;
   width: 100%;
@@ -43,7 +43,7 @@
     text-align: center;
     margin: 0 auto;
     display: block;
-  } /* Add some padding for better readability */
+  }
 }
 
 .main-middle-section {

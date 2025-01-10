@@ -13,12 +13,12 @@ export default function UniversitySelect({
   const [selectedDepartment, setSelectedDepartment] = useState(
     formData.department || ""
   );
+  const[scholarShip, setScholarShip] = useState()
   const [tuitionFee, setTuitionFee] = useState();
   const [scope, setScope] = useState();
   const [educationType, setEducationType] = useState();
-
+  const [language, setLanguage] = useState();
   const { NEU, BAU, CIU, EMU } = Universities;
-
   const { degree } = formData;
 
   const {
@@ -34,8 +34,10 @@ export default function UniversitySelect({
         universityData[university]?.[degree.toLowerCase()] || [];
       setDepartments(selectedDepartments);
       if (formData.department) {
+        setScholarShip(formData.scholarship)
         setSelectedDepartment(formData.department);
         setValue("department", formData.department);
+        setValue('scholarship', formData.scholarship)
       }
     }
   }, [university, degree, formData.department, setValue]);
@@ -118,7 +120,7 @@ export default function UniversitySelect({
 
     switch (university) {
       case "NEU":
-        selectedData = NEU.find((item) => item.program === selectedDept); 
+        selectedData = NEU.find((item) => item.program === selectedDept);
         break;
       case "CIU":
         selectedData = CIU.find((item) => item.program === selectedDept);
@@ -137,6 +139,7 @@ export default function UniversitySelect({
       setTuitionFee(selectedData.tuitionFee);
       setScope(selectedData.scope);
       setEducationType(selectedData.educationType);
+      setLanguage(selectedData.language);
     } else {
       setTuitionFee("Program not found");
     }
@@ -216,19 +219,62 @@ export default function UniversitySelect({
                 )}
               </div>
             )}
-            <div className="row mt-4">
+            {university && (
+              <div
+                className="btn-group mt-4 d-flex justify-content-start ml-3"
+                role="group"
+                aria-label="Basic checkbox toggle button group"
+              >
+                <input
+                  {...register("scholarship")}
+                  type="checkbox"
+                  className="btn-check"
+                  id="scholarship"
+                  autoComplete="off"
+                />
+                <label
+                  className="btn btn-outline-primary"
+                  htmlFor="scholarship"
+                  style={{ flex: "0 0 auto", width: "auto" }}
+                >
+                  Scholarship
+                </label>
+              </div>
+            )}
+
+            <div className="row mt-4 ml-2">
               {tuitionFee && (
                 <div>
-                  <p>Tuition Fee is: <span className="font-weight-bold">${tuitionFee}</span></p>
-                </div>)}
+                  <p>
+                    Tuition Fee is:{" "}
+                    <span className="font-weight-bold">
+                      {tuitionFee.symbol}
+                      {tuitionFee.value}
+                    </span>
+                  </p>
+                </div>
+              )}
               {scope && (
                 <div>
-                  <p>Scope : <span className="font-weight-bold">{scope}</span></p>
+                  <p>
+                    Scope : <span className="font-weight-bold">{scope}</span>
+                  </p>
                 </div>
               )}
               {educationType && (
                 <div>
-                  <p>Education Type : <span className="font-weight-bold">{educationType}</span></p>
+                  <p>
+                    Education Type :{" "}
+                    <span className="font-weight-bold">{educationType}</span>
+                  </p>
+                </div>
+              )}
+              {language && (
+                <div>
+                  <p>
+                    Language:{" "}
+                    <span className="font-weight-bold">{language}</span>
+                  </p>
                 </div>
               )}
             </div>

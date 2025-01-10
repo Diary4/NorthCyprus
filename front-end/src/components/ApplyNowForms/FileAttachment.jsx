@@ -33,7 +33,7 @@ export default function FileAttachment({ prevStep, updateFormData, formData, han
   
     
     const updatedFormData = { ...formData, ...data, ...filteredFiles };
-  
+    console.log(updatedFormData)
    
     handleFinalSubmit(updatedFormData);
   

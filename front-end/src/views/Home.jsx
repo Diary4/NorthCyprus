@@ -10,16 +10,16 @@ import "swiper/css/effect-cards";
 import StudiesCard from "../components/StudiesCard";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { 
-  MdGppGood , 
-  MdAirplanemodeActive , 
-  MdAutoGraph , 
+import {
+  MdGppGood,
+  MdAirplanemodeActive,
+  MdAutoGraph,
   MdBusinessCenter,
   MdComputer,
   MdFax,
   MdFoggy,
   MdMedicalServices,
-  MdOutlineCompost 
+  MdOutlineCompost,
 } from "react-icons/md";
 import { GiJusticeStar } from "react-icons/gi";
 import { FaEarthAfrica } from "react-icons/fa6";
@@ -30,7 +30,7 @@ import NEU from "../assets/NEU.png";
 import CIU from "../assets/CIU.png";
 import BAU from "../assets/BAU.png";
 import EMU from "../assets/EMU.png";
-import CPU from '../assets/cyprus.jpg'
+import CPU from "../assets/cyprus.jpg";
 
 export default function Main() {
   const UniversityCard = [
@@ -39,60 +39,26 @@ export default function Main() {
       img: NEU,
       content:
         "Near East University is the most comprehensive and equipped education institution in Cyprus, which raises individuals that are beneficial for its country, moves forward with secure steps, has 20 faculties, 6 institutes, 5 colleges, 32 research centres, 196 undergraduate, 240 graduate and doctorate programs and over 28,000 students from 143 different countries.",
-      direct: "https://neu.edu.tr/?lang=en",
     },
     {
       title: "Cyprus International University",
       img: CIU,
       content:
         "Cyprus International University is a modern campus University based in the suburb of Haspolat on the outskirts of Nicosia, the capital city of Cyprus. At the cornerstone of three continents and rich in terms of history and culture, North Cyprus, the pearl of the Mediterranean, offers a truly international experience.",
-      direct: "https://ciu.edu.tr/en",
     },
     {
       title: "Bahecesehir Cyprus University",
       img: BAU,
       content:
         "The University’s purpose, aside from providing an education of the highest standards, is to offer its students the means to study at different international locations and to acquire a global vision by giving them the chance to benefit from equivalent academic opportunities on different continents and in different",
-      direct: "https://baucyprus.edu.tr/",
     },
     {
       title: "Eastern Medaterranian University",
       img: EMU,
       content:
         "Eastern Mediterranean University (EMU) established in Northern Cyprus in 1979. It has a great reputation among the international Universities; it is one of the top 1500 Universities in all over the world. Therefore, it includes over 20000 students from 106 countries and 1,100 academicians from different 35 countries.",
-      direct: "https://www.emu.edu.tr/en",
     },
   ];
-
-  const [file, setFile] = useState()
-
-  const fileUpload = async () => {
-    
-    if(!file){
-      alert('please upload a file')
-      return;
-    }
-
-    const data = new FormData()
-    data.append('file', file)
-
-    try {
-      
-      const response = await fetch('http://localhost:3000/upload',{
-        method: "post",
-        headers: {
-          "content type": "mulitpart/form-data"
-        },
-        body: data
-      })
-      alert('file uploaded successfully')
-    } catch (error) {
-      console.log(error)
-      alert('failed to upload')
-      
-    }
-
-  }
 
   return (
     <div className="main">
@@ -146,12 +112,7 @@ export default function Main() {
         >
           {UniversityCard.map((card, index) => (
             <SwiperSlide key={index}>
-              <Card
-                title={card.title}
-                img={card.img}
-                content={card.content}
-                direct={card.direct}
-              />
+              <Card title={card.title} img={card.img} content={card.content} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -177,14 +138,20 @@ export default function Main() {
           Cyprus your pathway to success begins here.
         </p>
         <div className="studies-card-section">
-          <StudiesCard icon={<MdAirplanemodeActive/>} title="Aviation" />
-          <StudiesCard icon={<MdAutoGraph />} title="Art, Architecture, Design & Media " />
-          <StudiesCard icon={<MdBusinessCenter />} title="Business & Management" />
+          <StudiesCard icon={<MdAirplanemodeActive />} title="Aviation" />
+          <StudiesCard
+            icon={<MdAutoGraph />}
+            title="Art, Architecture, Design & Media "
+          />
+          <StudiesCard
+            icon={<MdBusinessCenter />}
+            title="Business & Management"
+          />
           <StudiesCard icon={<MdComputer />} title="Computer Science" />
           <StudiesCard icon={<MdFax />} title="Engineering Technology" />
           <StudiesCard icon={<MdFoggy />} title="Environment & Agriculture" />
           <StudiesCard icon={<MdMedicalServices />} title="Medicine & Health" />
-          <StudiesCard icon={<MdOutlineCompost />} title="Natural Sciences"/>
+          <StudiesCard icon={<MdOutlineCompost />} title="Natural Sciences" />
         </div>
       </div>
       <div className="keen-section" id="keen-section">
@@ -243,10 +210,7 @@ export default function Main() {
           </div>
         </div>
         <div className="keen-image">
-          <img
-            src={CPU}
-            alt="keen-education"
-          />
+          <img src={CPU} alt="keen-education" />
         </div>
       </div>
       <footer>

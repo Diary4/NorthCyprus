@@ -41,7 +41,7 @@ export default function Personalinfo({
               </label>
               <input
                 {...register("firstName", {
-                  required: "First Name is required",
+                  required: "First name is required",
                   minLength: {
                     value: 2,
                     message: "First Name should be at least 2 characters",
@@ -56,6 +56,27 @@ export default function Personalinfo({
                 <p className="alert alert-danger">{errors.firstName.message}</p>
               )}
             </div>
+            <div className="col-md-6">
+              <label htmlFor="fathersName" className="form-label">
+                Father name
+              </label>
+              <input
+                {...register("fathersName", {
+                  required: "Father name is required",
+                  minLength: {
+                    value: 2,
+                    message: "Father's Name should be at least 2 characters",
+                  },
+                })}
+                type="text"
+                id="fathers-name"
+                placeholder="E.g. John Doe"
+                className="form-control"
+              />
+              {errors.fathersName && (
+                <p className="alert alert-danger">{errors.fathersName.message}</p>
+              )}
+            </div>
             {/* Last Name */}
             <div className="col-md-6">
               <label htmlFor="last-name" className="form-label">
@@ -63,7 +84,7 @@ export default function Personalinfo({
               </label>
               <input
                 {...register("lastName", {
-                  required: "Last Name is required",
+                  required: "Last name is required",
                   minLength: {
                     value: 2,
                     message: "Last Name should be at least 2 characters",
@@ -85,7 +106,7 @@ export default function Personalinfo({
               </label>
               <input
                 {...register("DOB", {
-                  required: "Date of Birth is required",
+                  required: "Date of birth is required",
                 })}
                 type="date"
                 id="date-of-birth"
@@ -96,23 +117,7 @@ export default function Personalinfo({
               )}
             </div>
             {/* Father's Name */}
-            <div className="col-md-6">
-              <label htmlFor="fathersName" className="form-label">
-                Father's name <span style={{ opacity: "0.5" }}>(Optional)</span>
-              </label>
-              <input
-                {...register("fathersName", {
-                  minLength: {
-                    value: 2,
-                    message: "Father's Name should be at least 2 characters",
-                  },
-                })}
-                type="text"
-                id="fathers-name"
-                placeholder="E.g. John Doe"
-                className="form-control"
-              />
-            </div>
+            
             {/* Nationality */}
             <div className="col-md-6">
               <label htmlFor="nationality" className="form-label">

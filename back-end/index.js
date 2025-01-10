@@ -5,7 +5,6 @@ import connection from "./connection.js";
 import multer from "multer";
 import fs from "fs";
 import path from 'path'
-import { env } from "process";
 
 const app = express();
 
@@ -45,24 +44,6 @@ connection.connect((e) => {
   }
 });
 
-app.get("/users", (req, res) => {
-  const query = "SELECT * FROM users";
-
-  connection.query(query, (e, result) => {
-    if (e) {
-      console.log("Failed to retrieve data");
-      res.status(500).json({ error: "Failed to fetch data" });
-    } else {
-      res.json(result);
-    }
-  });
-});
-
-const sanitizeValue = (value) => {
-  if (typeof value === "string" && value.trim() === "") return null; 
-  if (typeof value === "object" && Object.keys(value).length === 0) return null; 
-  return value;
-};
 
 const filesToUpload = upload.fields([
   { name: 'passport', maxCount: 1 },
@@ -84,25 +65,26 @@ app.post("/submit", filesToUpload, (req, res) => {
     const query = `
       INSERT INTO users (
         first_name, last_name, father_name, date_of_birth, phone_number, email_address,
-        nationality, passport, degree, university, department, cv, personal_image
+        nationality, passport, degree, university, department, cv, personal_image, scholar_ship
       ) 
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `;
 
     const sanitizedValues = [
-      sanitizeValue(values.firstName),
-      sanitizeValue(values.lastName),
-      sanitizeValue(values.fathersName),
-      sanitizeValue(values.DOB),
-      sanitizeValue(values.phone),
-      sanitizeValue(values.email),
-      sanitizeValue(values.nationality),
+      values.firstName,
+      values.lastName,
+      values.fathersName,
+      values.DOB,
+      values.phone,
+      values.email,
+      values.nationality,
       passportFile,
-      sanitizeValue(values.degree),
-      sanitizeValue(values.university),
-      sanitizeValue(values.department),
+      values.degree,
+      values.university,
+      values.department,
       cvFile,
       personalImageFile,
+      values.scholarship
     ];
 
     connection.query(query, sanitizedValues, (e, result) => {

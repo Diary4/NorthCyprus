@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const Card = ({ img, title, content, direct }) => {
+
+  const navigate = useNavigate()
+
   return (
     <StyledWrapper>
       <div className="card">
@@ -13,11 +17,11 @@ const Card = ({ img, title, content, direct }) => {
           <p className="desc">{content}</p>
           <a
             className="action"
-            href={direct}
-            target="_blank"
+            href=""
+            onClick={() => navigate('departments')}
             rel="noopener noreferrer"
           >
-            Find out more
+            Browse Departments
             <span aria-hidden="true"> → </span>
           </a>
         </div>
