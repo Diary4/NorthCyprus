@@ -15,15 +15,14 @@ const Card = ({ img, title, content, direct }) => {
             <span className="title">{title}</span>
           </a>
           <p className="desc">{content}</p>
-          <a
+          <p
             className="action"
-            href=""
             onClick={() => navigate('departments')}
             rel="noopener noreferrer"
           >
             Browse Departments
             <span aria-hidden="true"> → </span>
-          </a>
+          </p>
         </div>
       </div>
     </StyledWrapper>
@@ -89,6 +88,7 @@ const StyledWrapper = styled.div`
 
   .action:hover {
     background-color: #344cb7;
+    cursor: pointer;
   }
 
   .action span {
