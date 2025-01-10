@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../assets/css/TypeWriter.css";
+import "../assets/css/typewriter.css";
 
 const Typewriter = () => {
   const words = ["Discover", "Learn", "Achieve", "Grow"];

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/css/Header.css'
+import '../assets/css/header.css'
 import { useNavigate } from 'react-router-dom'
 
 export default function Header() {
