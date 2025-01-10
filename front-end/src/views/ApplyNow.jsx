@@ -14,6 +14,7 @@ export default function ApplyNow() {
   const [formData, setFormData] = useState({});
 
   useEffect(() => {
+    document.title = "Apply now"
     const mediaQuery = window.matchMedia("(max-width: 768px)");
     setIsSmallScreen(mediaQuery.matches);
     const handleResize = (e) => setIsSmallScreen(e.matches);

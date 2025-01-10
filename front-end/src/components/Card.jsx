@@ -1,10 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
 
 const Card = ({ img, title, content, direct }) => {
 
-  const navigate = useNavigate()
 
   return (
     <StyledWrapper>
@@ -17,7 +15,7 @@ const Card = ({ img, title, content, direct }) => {
           <p className="desc">{content}</p>
           <p
             className="action"
-            onClick={() => navigate('departments')}
+            onClick={direct}
             rel="noopener noreferrer"
           >
             Browse Departments

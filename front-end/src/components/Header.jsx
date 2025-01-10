@@ -15,7 +15,6 @@ export default function Header() {
             <ul className='nav'>
                 <li><a href="#main-middle-section">Universities</a></li>
                 <li><a href="#footer">Contact</a></li>
-                <li onClick={() => navigate('/departments')}>Departments</li>
             </ul>
         </div>
         <div className='right-section'>

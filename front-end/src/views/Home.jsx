@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import "../assets/css/main.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
@@ -31,34 +31,47 @@ import CIU from "../assets/CIU.png";
 import BAU from "../assets/BAU.png";
 import EMU from "../assets/EMU.png";
 import CPU from "../assets/cyprus.jpg";
+import { useNavigate } from "react-router-dom";
 
 export default function Main() {
+
+  const navigate = useNavigate()
+
   const UniversityCard = [
     {
       title: "Near East University",
       img: NEU,
       content:
         "Near East University is the most comprehensive and equipped education institution in Cyprus, which raises individuals that are beneficial for its country, moves forward with secure steps, has 20 faculties, 6 institutes, 5 colleges, 32 research centres, 196 undergraduate, 240 graduate and doctorate programs and over 28,000 students from 143 different countries.",
-    },
+      direct: () => navigate('/neu-departments')
+      },
     {
       title: "Cyprus International University",
       img: CIU,
       content:
         "Cyprus International University is a modern campus University based in the suburb of Haspolat on the outskirts of Nicosia, the capital city of Cyprus. At the cornerstone of three continents and rich in terms of history and culture, North Cyprus, the pearl of the Mediterranean, offers a truly international experience.",
-    },
+      direct: () => navigate('/ciu-departments')
+      },
     {
       title: "Bahecesehir Cyprus University",
       img: BAU,
       content:
         "The University’s purpose, aside from providing an education of the highest standards, is to offer its students the means to study at different international locations and to acquire a global vision by giving them the chance to benefit from equivalent academic opportunities on different continents and in different",
-    },
+      direct: () => navigate('/bau-departments')
+      },
     {
       title: "Eastern Medaterranian University",
       img: EMU,
       content:
         "Eastern Mediterranean University (EMU) established in Northern Cyprus in 1979. It has a great reputation among the international Universities; it is one of the top 1500 Universities in all over the world. Therefore, it includes over 20000 students from 106 countries and 1,100 academicians from different 35 countries.",
-    },
+      direct: () => navigate('/emu-departments')
+      },
   ];
+
+
+  useEffect(() => {
+    document.title = "North cyprus"
+  });
 
   return (
     <div className="main">
@@ -112,7 +125,7 @@ export default function Main() {
         >
           {UniversityCard.map((card, index) => (
             <SwiperSlide key={index}>
-              <Card title={card.title} img={card.img} content={card.content} />
+              <Card title={card.title} img={card.img} content={card.content} direct={card.direct}/>
             </SwiperSlide>
           ))}
         </Swiper>
