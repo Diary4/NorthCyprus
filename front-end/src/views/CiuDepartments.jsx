@@ -8,6 +8,7 @@ import ciuImage from "../assets/CIU.png";
 
 export default function CiuDepartments() {
   const { CIU } = university;
+  const newCiu = CIU.slice(0,20)
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -24,19 +25,17 @@ export default function CiuDepartments() {
       <main className="department-main">
         <div className="university-cont">
           <div className="uni-cont-content">
-            <p className="back" onClick={() => navigate("/")}>
+            <button className="back" onClick={() => navigate("/")}>
               &lt; Back
-            </p>
+            </button>
             <h1>Cyprus International University</h1>
             <img className="uni-logo" src={ciuImage} alt="" />
             <p className="university-description">
-              Near East University is the most comprehensive and equipped
-              education institution in Cyprus, which raises individuals that are
-              beneficial for its country, moves forward with secure steps, has
-              20 faculties, 6 institutes, 5 colleges, 32 research centres, 196
-              undergraduate, 240 graduate and doctorate programs and over 28,000
-              students from 143 different countries. Near East University, which
-              carries an international identity with its education facilities.
+              "Cyprus International University is a modern campus University
+              based in the suburb of Haspolat on the outskirts of Nicosia, the
+              capital city of Cyprus. At the cornerstone of three continents and
+              rich in terms of history and culture, North Cyprus, the pearl of
+              the Mediterranean, offers a truly international experience.",
             </p>
             <button className="button" onClick={() => navigate("/apply-now")}>
               Apply now
@@ -44,9 +43,9 @@ export default function CiuDepartments() {
           </div>
         </div>
         <div className="department-section">
-          <h2>Departments of the university</h2>
+          <h2>Departments of the University</h2>
           <div className="department-card">
-            {CIU.map((card, index) => (
+            {newCiu.map((card, index) => (
               <DeptCard
                 key={index}
                 type={card.type}

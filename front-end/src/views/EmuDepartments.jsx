@@ -7,7 +7,9 @@ import { useNavigate } from "react-router-dom";
 import emuImage from "../assets/EMU.png";
 
 export default function EmuDepartments() {
+
   const { EMU } = university;
+  const newEmu = EMU.slice(0,20)
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -24,19 +26,17 @@ export default function EmuDepartments() {
       <main className="department-main">
         <div className="university-cont">
           <div className="uni-cont-content">
-            <p className="back" onClick={() => navigate("/")}>
+            <button className="back" onClick={() => navigate("/")}>
               &lt; Back
-            </p>
+            </button>
             <h1>Eastern Medeterrain University</h1>
             <img className="uni-logo" src={emuImage} alt="" />
             <p className="university-description">
-              Near East University is the most comprehensive and equipped
-              education institution in Cyprus, which raises individuals that are
-              beneficial for its country, moves forward with secure steps, has
-              20 faculties, 6 institutes, 5 colleges, 32 research centres, 196
-              undergraduate, 240 graduate and doctorate programs and over 28,000
-              students from 143 different countries. Near East University, which
-              carries an international identity with its education facilities.
+              "Eastern Mediterranean University (EMU) established in Northern
+              Cyprus in 1979. It has a great reputation among the international
+              Universities; it is one of the top 1500 Universities in all over
+              the world. Therefore, it includes over 20000 students from 106
+              countries and 1,100 academicians from different 35 countries.",
             </p>
             <button className="button" onClick={() => navigate("/apply-now")}>
               Apply now
@@ -44,9 +44,9 @@ export default function EmuDepartments() {
           </div>
         </div>
         <div className="department-section">
-          <h2>Departments of the university</h2>
+          <h2>Departments of the University</h2>
           <div className="department-card">
-            {EMU.map((card, index) => (
+            {newEmu.map((card, index) => (
               <DeptCard
                 key={index}
                 type={card.type}

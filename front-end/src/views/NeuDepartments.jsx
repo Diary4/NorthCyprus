@@ -8,6 +8,7 @@ import neuImage from "../assets/NEU.png";
 
 export default function Departments() {
   const { NEU } = university;
+  const newNeu = NEU.slice(0,20);
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -24,9 +25,9 @@ export default function Departments() {
       <main className="department-main">
         <div className="university-cont">
           <div className="uni-cont-content">
-            <p className="back" onClick={() => navigate("/")}>
+            <button className="back" onClick={() => navigate("/")}>
               &lt; Back
-            </p>
+            </button>
             <h1>Near East University</h1>
             <img className="uni-logo" src={neuImage} alt="" />
             <p className="university-description">
@@ -44,9 +45,9 @@ export default function Departments() {
           </div>
         </div>
         <div className="department-section">
-          <h2>Departments of the university</h2>
+          <h2>Departments of the University</h2>
           <div className="department-card">
-            {NEU.map((card, index) => (
+            {newNeu.map((card, index) => (
               <DeptCard
                 key={index}
                 type={card.type}
