@@ -6543,8 +6543,8 @@ const jsonString = `
   }
  },
  {
-  "program": "COMPUTER ENGINEERING (WITH\/NON-THESIS\/BRIDGING)",
-  "type": "Master",
+  "program": "COMPUTER ENGINEERING ",
+  "type": "Master non thesis",
   "language": "English",
   "scope": "Full Tuition",
   "educationType": "Full Time",
@@ -6554,8 +6554,8 @@ const jsonString = `
   }
  },
  {
-  "program": "ARCHITECTURE (WITH\/NON-THESIS \/BRIDGING)",
-  "type": "Master",
+  "program": "ARCHITECTURE ",
+  "type": "Master non thesis",
   "language": "English",
   "scope": "Full Tuition",
   "educationType": "Full Time",
@@ -6565,8 +6565,8 @@ const jsonString = `
   }
  },
  {
-  "program": "INTERNATIONAL AND COMPARATIVE LAW (WITH\/NON-THESIS \/BRIDGING)",
-  "type": "Master",
+  "program": "INTERNATIONAL AND COMPARATIVE LAW ",
+  "type": "Master non thesis",
   "language": "English",
   "scope": "Full Tuition",
   "educationType": "Full Time",
@@ -6576,8 +6576,8 @@ const jsonString = `
   }
  },
  {
-  "program": "POLITICAL SCIENCE AND INTERNATIONAL RELATIONS (WITH\/NON-THESIS \/BRIDGING)",
-  "type": "Master",
+  "program": "POLITICAL SCIENCE AND INTERNATIONAL RELATIONS",
+  "type": "Master non thesis",
   "language": "English",
   "scope": "Full Tuition",
   "educationType": "Full Time",
@@ -6587,8 +6587,8 @@ const jsonString = `
   }
  },
  {
-  "program": "MANAGEMENT INFORMATION SYSTEMS (WITH\/NON-THESIS)",
-  "type": "Master",
+  "program": "MANAGEMENT INFORMATION SYSTEMS (",
+  "type": "Master non thesis",
   "language": "English",
   "scope": "Full Tuition",
   "educationType": "Full Time",
@@ -6598,8 +6598,8 @@ const jsonString = `
   }
  },
  {
-  "program": "HEALTHCARE MANAGEMENT (WITH\/NON[1]THESIS)",
-  "type": "Master",
+  "program": "HEALTHCARE MANAGEMENT",
+  "type": "Master non thesis",
   "language": "English",
   "scope": "Full Tuition",
   "educationType": "Full Time",
@@ -6609,8 +6609,8 @@ const jsonString = `
   }
  },
  {
-  "program": "ENGLISH LANGUAGE TEACHING (WITH\/NON[1]THESIS)",
-  "type": "Master",
+  "program": "ENGLISH LANGUAGE TEACHING",
+  "type": "Master non thesis",
   "language": "English",
   "scope": "Full Tuition",
   "educationType": "Full Time",
@@ -6620,8 +6620,8 @@ const jsonString = `
   }
  },
  {
-  "program": "BLOCKCHAIN TECHNOLOGY (WITH\/NON[1]THESIS)",
-  "type": "Master",
+  "program": "BLOCKCHAIN TECHNOLOGY",
+  "type": "Master non thesis",
   "language": "English",
   "scope": "Full Tuition",
   "educationType": "Full Time",
@@ -6631,8 +6631,8 @@ const jsonString = `
   }
  },
  {
-  "program": "BUSINESS ADMINISTRATION (WITH\/NON[1]THESIS \/BRIDGING)",
-  "type": "Master",
+  "program": "BUSINESS ADMINISTRATION",
+  "type": "Master non thesis",
   "language": "English",
   "scope": "Full Tuition",
   "educationType": "Full Time",
@@ -6642,7 +6642,7 @@ const jsonString = `
   }
  },
  {
-  "program": "BUSINESS ADMINISTRATION (WITHTHESIS\/BRIDGING)",
+  "program": "BUSINESS ADMINISTRATION",
   "type": "Phd",
   "language": "English",
   "scope": "Full Tuition",
@@ -7921,8 +7921,8 @@ const jsonString = `
  },
  {
   "program": "Business Administration",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -7932,8 +7932,8 @@ const jsonString = `
  },
  {
   "program": "Business Administration",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -7965,8 +7965,8 @@ const jsonString = `
  },
  {
   "program": "International Relations",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -7976,8 +7976,8 @@ const jsonString = `
  },
  {
   "program": "International Relations",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8009,8 +8009,8 @@ const jsonString = `
  },
  {
   "program": "Economics",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8020,8 +8020,8 @@ const jsonString = `
  },
  {
   "program": "Economics",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8053,8 +8053,8 @@ const jsonString = `
  },
  {
   "program": "Banking and Finance",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8064,8 +8064,8 @@ const jsonString = `
  },
  {
   "program": "Banking and Finance",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8097,8 +8097,8 @@ const jsonString = `
  },
  {
   "program": "Banking and Finance (online)",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8108,8 +8108,8 @@ const jsonString = `
  },
  {
   "program": "Banking and Finance (online)",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8141,8 +8141,8 @@ const jsonString = `
  },
  {
   "program": "Marketing Management",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8152,8 +8152,8 @@ const jsonString = `
  },
  {
   "program": "Marketing Management",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8163,8 +8163,8 @@ const jsonString = `
  },
  {
   "program": "Managerial Economics",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8174,8 +8174,8 @@ const jsonString = `
  },
  {
   "program": "Managerial Economics",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8185,8 +8185,8 @@ const jsonString = `
  },
  {
   "program": "Financial Economics",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8196,8 +8196,8 @@ const jsonString = `
  },
  {
   "program": "Financial Economics",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8251,8 +8251,8 @@ const jsonString = `
  },
  {
   "program": "Gender Studies",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8262,8 +8262,8 @@ const jsonString = `
  },
  {
   "program": "Gender Studies",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8295,8 +8295,8 @@ const jsonString = `
  },
  {
   "program": "Human Resource Management",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8306,8 +8306,8 @@ const jsonString = `
  },
  {
   "program": "Human Resource Management",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8317,8 +8317,8 @@ const jsonString = `
  },
  {
   "program": "International Trade and Business",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8328,8 +8328,8 @@ const jsonString = `
  },
  {
   "program": "International Trade and Business",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8361,8 +8361,8 @@ const jsonString = `
  },
  {
   "program": "Architecture",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8372,8 +8372,8 @@ const jsonString = `
  },
  {
   "program": "Architecture",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8405,8 +8405,8 @@ const jsonString = `
  },
  {
   "program": "Interior Architecture",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8416,8 +8416,8 @@ const jsonString = `
  },
  {
   "program": "Interior Architecture",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8449,8 +8449,8 @@ const jsonString = `
  },
  {
   "program": "Urban Design",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8460,8 +8460,8 @@ const jsonString = `
  },
  {
   "program": "Urban Design",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8537,8 +8537,8 @@ const jsonString = `
  },
  {
   "program": "Medical Biotechnology",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8548,8 +8548,8 @@ const jsonString = `
  },
  {
   "program": "Medical Biotechnology",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8647,8 +8647,8 @@ const jsonString = `
  },
  {
   "program": "Information Systems",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8658,8 +8658,8 @@ const jsonString = `
  },
  {
   "program": "Information Systems",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8713,8 +8713,8 @@ const jsonString = `
  },
  {
   "program": "Digital Media and Film",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8724,8 +8724,8 @@ const jsonString = `
  },
  {
   "program": "Digital Media and Film",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8735,8 +8735,8 @@ const jsonString = `
  },
  {
   "program": "Visual Arts and Visual Communication Design",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8746,8 +8746,8 @@ const jsonString = `
  },
  {
   "program": "Visual Arts and Visual Communication Design",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8779,8 +8779,8 @@ const jsonString = `
  },
  {
   "program": "Information and Communication Technologies in Education",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8790,8 +8790,8 @@ const jsonString = `
  },
  {
   "program": "Information and Communication Technologies in Education",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8867,8 +8867,8 @@ const jsonString = `
  },
  {
   "program": "Early Childhood Education",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8878,8 +8878,8 @@ const jsonString = `
  },
  {
   "program": "Early Childhood Education",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8955,8 +8955,8 @@ const jsonString = `
  },
  {
   "program": "Civil Engineering",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8966,8 +8966,8 @@ const jsonString = `
  },
  {
   "program": "Civil Engineering",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -8999,8 +8999,8 @@ const jsonString = `
  },
  {
   "program": "Computer Engineering",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -9010,8 +9010,8 @@ const jsonString = `
  },
  {
   "program": "Computer Engineering",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -9065,8 +9065,8 @@ const jsonString = `
  },
  {
   "program": "Indestrial Engineering",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -9076,8 +9076,8 @@ const jsonString = `
  },
  {
   "program": "Indestrial Engineering",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -9109,8 +9109,8 @@ const jsonString = `
  },
  {
   "program": "Management Engineering",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -9120,8 +9120,8 @@ const jsonString = `
  },
  {
   "program": "Management Engineering",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -9219,8 +9219,8 @@ const jsonString = `
  },
  {
   "program": "Comparative Legal Systems (Joint Program with University of Bologna)",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -9230,8 +9230,8 @@ const jsonString = `
  },
  {
   "program": "Comparative Legal Systems (Joint Program with University of Bologna)",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -9263,8 +9263,8 @@ const jsonString = `
  },
  {
   "program": "Hotel Management (Online)",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -9274,8 +9274,8 @@ const jsonString = `
  },
  {
   "program": "Hotel Management (Online)",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -9307,8 +9307,8 @@ const jsonString = `
  },
  {
   "program": "Tourism Management",
-  "type": "Master Non-Thesis",
-  "language": "Turkish",
+  "type": "Master ",
+  "language": " non thesisTurkish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -9318,8 +9318,8 @@ const jsonString = `
  },
  {
   "program": "Tourism Management",
-  "type": "Master Non-Thesis",
-  "language": "English",
+  "type": "Master ",
+  "language": " non thesisEnglish",
   "scope": "Yearly",
   "educationType": "Full Time",
   "tuitionFee": {
@@ -9561,4 +9561,5 @@ const jsonString = `
 ]
 }
 `
+
 export default jsonString
