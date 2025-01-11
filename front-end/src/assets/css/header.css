@@ -22,9 +22,17 @@
 }
 
 .left-section h1 {
-  margin: 0; /* Remove default margin */
-  font-size: 1.5em; /* Adjust font size if needed */
+  margin: 0; 
+  font-size: 1.5em; 
   cursor: pointer;
+  font-family: "Playwrite AU SA", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+
+  a{
+    color: #1f55c1;
+  }
 }
 
 .middle-section .nav {

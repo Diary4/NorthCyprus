@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div className="header">
         <div className='left-section' onClick={() => navigate('/')}>
-            <h1><a href="#top-section">Logo</a></h1>
+            <h1><a href="#top-section">North Cyprus</a></h1>
         </div>
         <div className='middle-section'>
             <ul className='nav'>
