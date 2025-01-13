@@ -1,6 +1,7 @@
 {
   "name": "keen-education",
   "private": true,
+  "homepage": "https://northcyprusuniversities.com/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

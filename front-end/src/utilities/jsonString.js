@@ -2463,7 +2463,7 @@ const jsonString = `
  },
  {
   "program": "Folklore Education",
-  "type": "Master non Thesis",
+  "type": "Master",
   "language": "Turkish",
   "scope": "Semester",
   "tuitionFee": {
@@ -9561,5 +9561,4 @@ const jsonString = `
 ]
 }
 `
-
-export default jsonString
+export default jsonString;

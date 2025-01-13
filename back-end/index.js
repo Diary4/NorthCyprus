@@ -47,8 +47,12 @@ connection.connect((e) => {
 
 const filesToUpload = upload.fields([
   { name: 'passport', maxCount: 1 },
-  { name: 'cv', maxCount: 1 },
-  { name: 'personalImage', maxCount: 1 },
+  { name: 'masterTranscript', maxCount: 1 },
+  { name: 'thesisPropsal', maxCount: 1},
+  { name: 'bachelorTranscript' , maxCount: 1},
+  { name: 'bachelorCertification', maxCount: 1},
+  { name: 'recommendationLetter', maxCount: 1},
+  { name: 'grade12Transcript' , maxCount:1}
 ]);
 
 app.post("/submit", filesToUpload, (req, res) => {
@@ -56,18 +60,24 @@ app.post("/submit", filesToUpload, (req, res) => {
     const values = req.body;
 
     const passportFile = req.files.passport ? fs.readFileSync(req.files.passport[0].path) : null;
-    const cvFile = req.files.cv ? fs.readFileSync(req.files.cv[0].path) : null;
-    const personalImageFile = req.files.personalImage ? fs.readFileSync(req.files.personalImage[0].path) : null;
+    const masterTranscriptFile = req.files.masterTranscriptFile ? fs.readFileSync(req.files.masterTranscriptFile[0].path) : null;
+    const thesisProposalFile = req.files.thesisProposalFile ? fs.readFileSync(req.files.thesisProposalFile[0].path) : null;
+    const bachelorTranscriptFile = req.files.bachelorCertificationFile ? fs.readFileSync(req.files.bachelorCertificationFile[0].path) : null;
+    const bachelorCertificationFile = req.files.personalImage ? fs.readFileSync(req.files.personalImage[0].path) : null;
+    const recommendationLetterFile = req.files.recommendationLetterFile ? fs.readFileSync(req.files.recommendationLetterFile[0].path) : null;
+    const grade12TranscriptFile = req.files.grade12Transcript ? fs.readFileSync(req.file.grade12Transcript[0].path) : null;
 
-    console.log("Body:", values);
-    console.log("Files:", req.files);
+    
 
     const query = `
       INSERT INTO users (
         first_name, last_name, father_name, date_of_birth, phone_number, email_address,
-        nationality, passport, degree, university, department, cv, personal_image, scholar_ship
+        nationality, passport, degree, university, department, scholar_ship,
+        master_transcript, thesis_propsal, bachelor_transcript, bachelor_certification,
+        recommendation_letter, 12_grade_transcript
+        
       ) 
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?. ?)
     `;
 
     const sanitizedValues = [
@@ -82,18 +92,21 @@ app.post("/submit", filesToUpload, (req, res) => {
       values.degree,
       values.university,
       values.department,
-      cvFile,
-      personalImageFile,
-      values.scholarship
+      values.scholarship,
+      masterTranscriptFile,
+      thesisProposalFile,
+      bachelorTranscriptFile,
+      bachelorCertificationFile,
+      recommendationLetterFile,
+      grade12TranscriptFile
     ];
 
     connection.query(query, sanitizedValues, (e, result) => {
       if (e) {
-        console.error("Error inserting data:", e.message);
-        console.log("Sanitized values:", sanitizedValues);
+        console.log('Sanitized Value: ',sanitizedValues)
         return res.status(500).json({ error: e.message });
       } else {
-        console.log("Data inserted:", sanitizedValues);
+        console.log('Values: ', sanitizedValues)
         return res.status(201).json({
           message: "User added successfully",
           id: result.insertId,
@@ -101,7 +114,6 @@ app.post("/submit", filesToUpload, (req, res) => {
       }
     });
   } catch (error) {
-    console.error("Error handling request:", error);
     res.status(500).json({ error: "Internal server error" });
   }
 });
