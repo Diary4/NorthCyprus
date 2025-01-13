@@ -1,9 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import '../scss/style.scss'
-import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
@@ -16,14 +14,14 @@ export default function Footer() {
     <footer className="footer-10" id='footer'>
 			<div className="container">
 				<div className="row mb-5 pb-3 no-gutters">
-					<div className="col-md-4 mb-md-0 mb-4 d-flex">
+					<div className="col-md-12 mb-md-0 mb-4 d-flex">
 						<div className="con con-2 w-100 py-5">
 							<div className="con-info w-100 text-center">
 								<div className="icon d-flex align-items-center justify-content-center">
 									<span><MdEmail /></span>
 								</div>
 								<div className="text">
-									<span>keeneducation@email.com</span>
+									<span>info@northcyprusuniversities.com</span>
 								</div>
 							</div>
 						</div>
@@ -64,7 +62,7 @@ export default function Footer() {
 				</div>
 				<div className="row mt-5 pt-4 border-top">
           <div className="col-md-6 col-lg-8 mb-md-0 mb-4">
-            <p>	&copy; {date.getFullYear()} all rights reserved !! Diary </p>
+            <p>	&copy; {date.getFullYear()} all rights reserved !! North Cyprus Universities </p>
           </div>
           <div className="col-md-6 col-lg-4 text-md-right">
           	<ul className="ftco-footer-social p-0">

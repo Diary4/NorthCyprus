@@ -10,6 +10,7 @@ import "swiper/css/effect-cards";
 import StudiesCard from "../components/StudiesCard";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ApplyNow from "./ApplyNow";
 import {
   MdGppGood,
   MdAirplanemodeActive,
@@ -32,6 +33,7 @@ import BAU from "../assets/BAU.png";
 import EMU from "../assets/EMU.png";
 import CPU from "../assets/cyprus.jpg";
 import { useNavigate } from "react-router-dom";
+import ApplyNowButton from "../components/ApplyNowButton";
 
 export default function Main() {
 
@@ -88,6 +90,7 @@ export default function Main() {
               one small effort at a time.
             </p>
           </div>
+          <ApplyNowButton onClick={() => navigate('apply-now')}/>
         </div>
       </div>
       <div className="main-middle-section" id="main-middle-section">

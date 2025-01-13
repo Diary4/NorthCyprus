@@ -131,10 +131,9 @@ export default function Personalinfo({
                 id="nationality"
                 className="form-select"
               >
-                <option value="">Select</option>
-                <option value="us">United States</option>
-                <option value="uk">United Kingdom</option>
-                <option value="ca">Canada</option>
+                <option selected hidden>Select</option>
+                <option value="iraqi">Iraq</option>
+                <option value="turksih">Turkey</option>
               </select>
               {errors.nationality && (
                 <p className="alert alert-danger">{errors.nationality.message}</p>

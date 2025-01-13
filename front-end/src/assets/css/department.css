@@ -55,24 +55,16 @@
 }
 
 .back {
-  background-color: #f3f7fe;
-  color: #3b82f6;
+  border-radius: 10px;
   border: none;
-  cursor: pointer;
-  border-radius: 8px;
-  width: 100px;
-  height: 45px;
-  transition: 0.3s;
+  background: none;
+  color: #fff;
+  font-weight: 500;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.back:hover {
-  background-color: #3b82f6;
-  box-shadow: 0 0 0 5px #3b83f65f;
-  color: #fff;
-}
 
 
 .department-section {

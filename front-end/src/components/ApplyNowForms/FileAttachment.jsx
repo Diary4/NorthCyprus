@@ -71,7 +71,7 @@ export default function FileAttachment({
               </div>
               <div className="col-md-6">
                 <label htmlFor="12-grade-transcript" className="form-label">
-                  12 Grade Transcript
+                  12th Grade Transcript
                 </label>
                 <input
                   {...register("grade12Transcript", {
@@ -111,7 +111,7 @@ export default function FileAttachment({
               </div>
               <div className="col-md-6">
                 <label htmlFor="bachelorTranscript" className="form-label">
-                  Bachelor Transcript
+                  Bachelor's Transcript
                 </label>
                 <input
                   {...register("bachelorTranscript", {
@@ -129,7 +129,7 @@ export default function FileAttachment({
               </div>
               <div className="col-md-6">
                 <label htmlFor="12-grade-transcript" className="form-label">
-                  12 grade Transcript
+                  12th Grade Transcript
                 </label>
                 <input
                   {...register("grade12Transcript", {
@@ -171,11 +171,11 @@ export default function FileAttachment({
               </div>
               <div className="col-md-6">
                 <label htmlFor="Master-Transcript" className="form-label">
-                  Master Transcript
+                  Master's Transcript
                 </label>
                 <input
                   {...register("masterTranscript", {
-                    required: "Master Transcript is required",
+                    required: "Master's Transcript is required",
                   })}
                   type="file"
                   id="maste rtranscript"
@@ -207,12 +207,30 @@ export default function FileAttachment({
                 )}
               </div>
               <div className="col-md-6">
+                <label htmlFor="master-certification" className="form-label">
+                  Master's Certification
+                </label>
+                <input
+                  {...register("masterCertification", {
+                    required: "Master's Certification is required",
+                  })}
+                  type="file"
+                  id="master-certification"
+                  className="form-control-file form-control"
+                />
+                {errors.masterCertification && (
+                  <p className="alert alert-danger">
+                    {errors.masterCertification.message}
+                  </p>
+                )}
+              </div>
+              <div className="col-md-6">
                 <label htmlFor="bachelor-transcript" className="form-label">
-                  Bachelor Transcript
+                  Bachelor's Transcript
                 </label>
                 <input
                   {...register("bachelorTranscript", {
-                    required: "Bachelor Transcript is required",
+                    required: "Bachelor's Transcript is required",
                   })}
                   type="file"
                   id="bachelor-transcript"
@@ -224,26 +242,9 @@ export default function FileAttachment({
                   </p>
                 )}
               </div>
+
               <div className="col-md-6">
-                <label htmlFor="bachelor-certification" className="form-label">
-                  Bachelor Certification
-                </label>
-                <input
-                  {...register("bachelorCertification", {
-                    required: "Bachelor Certification is required",
-                  })}
-                  type="file"
-                  id="bachelor-certification"
-                  className="form-control-file form-control"
-                />
-                {errors.bachelorCertification && (
-                  <p className="alert alert-danger">
-                    {errors.bachelorCertification.message}
-                  </p>
-                )}
-              </div>
-              <div className="col-md-6">
-                <label htmlFor="bachelor-certification" className="form-label">
+                <label htmlFor="recommendation-letter" className="form-label">
                   Recommendation Letter{" "}
                   <span style={{ opacity: "0.5" }}>(If Available)</span>
                 </label>
